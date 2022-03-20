@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*  PAGE  ============================================================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.box { padding: 1%; }
+/*section {margin: 1% 0; }*/
+
+
+/*  GROUPING  ============================================================================= */
+.row { max-width: 1200px; margin: 0 auto; zoom: 1; }
+	.row:before,
+	.row:after { content:" "; display:table; }
+	.row:after { clear:both; }
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+.col { display: block; float: left; margin: 0.5% 0 0% 0.5%; }
+	.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+@media only screen and (max-width: 480px) {
+	.col { /*margin: 1% 0 1% 0%;*/margin: auto; }
+}
+
+/*  GRID OF ONE   ============================================================================= */
+.col-1-of-1 { width: 100%; }
+
+/*@media screen and (min-width:481px) and (max-width:1023px) {
+	.row { max-width: 700px;}
+}*/
+@media only screen and (max-width: 480px) {
+	.col-1 { width: 100%; }	
+}
+
+/*  GRID OF TWO   ============================================================================= */
+.col-2-of-2 { width: 100%; }
+.col-1-of-2 { width: 49.75%; }
+
+/*@media screen and (min-width:481px) and (max-width:1023px) {
+	.row { max-width: 700px;}
+}*/
+@media only screen and (max-width: 480px) {
+	.col-2-of-2 { width: 100%; }
+	.col-1-of-2 { width: 100%; }	
+}
+
+/*  GRID OF THREE   ============================================================================= */	
+.col-3-of-3 { width: 100%; }
+.col-2-of-3 { width: 66.5%; }
+.col-1-of-3 { width: 33%; }
+
+@media only screen and (max-width: 480px) {
+	.col-3-of-3 { width: 100%; }
+	.col-2-of-3 { width: 100%; } 
+	.col-1-of-3 { width: 100%; }
+}
+
+/*  GRID OF FOUR   ============================================================================= */	
+.col-4-of-4 { width: 100%; }
+.col-3-of-4 { width: 74.88%; }
+.col-2-of-4 { width: 49.75%; }
+.col-1-of-4 { width: 24.62%; }
+	 
+@media only screen and (max-width: 480px) {
+	.col-4-of-4 { width: 100%; }
+	.col-3-of-4 { width: 100%; }
+	.col-2-of-4 { width: 100%; }
+	.col-1-of-4 { width: 100%; }	
+}
